@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Captain America: Civil War",
+        "releaseYear": 2016
+    },
+    {
+        "id": 2,
+        "title": "Doctor Strange",
+        "releaseYear": 2016
+    },
+    {
+        "id": 3,
+        "title": "Guardians of the Galaxy Vol. 2",
+        "releaseYear": 2017
+    }
+]

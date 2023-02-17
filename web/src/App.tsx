@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from "react";
+import {MovieTable} from "./components/MovieTable";
+import {Navigation} from "./components/Navigation";
 
-function App() {
+const App: FC = () => {
+    /*const movies: Movie[] = [
+        {
+            id: 1,
+            title: "Doctor Strange",
+            releaseYear: 2016,
+            genre: Genre.SciFi
+        },
+        {
+            id: 2,
+            title: "Doctor Strange 2",
+            releaseYear: 2022,
+            genre: Genre.SciFi
+        },
+        {
+            id: 3,
+            title: "Some Comedy",
+            releaseYear: 2020,
+            genre: Genre.Comedy
+        }
+    ];*/
+
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <Navigation/>
+            <MovieTable/>
         </div>
-    );
+    )
 }
 
 export default App;

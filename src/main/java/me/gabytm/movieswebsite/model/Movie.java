@@ -14,9 +14,9 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private int releaseYear;
+    private short releaseYear;
 
-    public Movie(Long id, String title, int releaseYear) {
+    public Movie(Long id, String title, short releaseYear) {
         this.id = id;
         this.title = title;
         this.releaseYear = releaseYear;
@@ -38,10 +38,10 @@ public class Movie {
     public void setTitle(String title) {
         this.title = title;
     }
-    public int getReleaseYear() {
+    public short getReleaseYear() {
         return releaseYear;
     }
-    public void setReleaseYear(int releaseYear) {
+    public void setReleaseYear(short releaseYear) {
         this.releaseYear = releaseYear;
     }
 
